@@ -1,0 +1,20 @@
+﻿<Window x:Name="MainWin" x:Class="EkzPiletsky.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EkzPiletsky"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="328" Width="308">
+    <Grid x:Name="mainGrid">
+        <Label x:Name="nLabel" Content="Длина массива - " HorizontalAlignment="Left" Margin="40,40,0,0" Height="26" VerticalAlignment="Top"/>
+        <Label x:Name="maxLabel" Content="№ максимального - " HorizontalAlignment="Left" Margin="40,198,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="minLabel" Content="№ минимального - " HorizontalAlignment="Left" Margin="40,158,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="maxTextBox" HorizontalAlignment="Left" Height="26" Margin="165,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" IsReadOnly="True"/>
+        <TextBox x:Name="nTextBox" Height="26" Margin="149,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="111"/>
+        <TextBox x:Name="masTextBox" Height="26" Margin="40,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsReadOnly="True" HorizontalAlignment="Left" Width="220"/>
+        <TextBox x:Name="minTextBox" HorizontalAlignment="Left" Height="26" Margin="165,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" IsReadOnly="True"/>
+        <Button x:Name="masButton" Content="Вывод" Margin="100,82,0,0" VerticalAlignment="Top" Width="100" HorizontalAlignment="Left" Click="masButton_Click"/>
+
+    </Grid>
+</Window>
